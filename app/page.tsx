@@ -161,6 +161,7 @@ export default function Home() {
             <h3 className="text-lg font-medium text-gray-800">联系方式</h3>
             <p className="text-gray-600 mt-1">
               Email: <a href="liangjunhong2022@ia.ac.cn" className="text-blue-600 hover:underline">liangjunhong2022@ia.ac.cn</a>
+              
             </p>
           </div>
 
