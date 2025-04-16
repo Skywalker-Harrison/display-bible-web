@@ -80,8 +80,8 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen p-8 bg-gray-100">
-      <div className="max-w-6xl mx-auto">
+    <main className="min-h-screen p-8 bg-gray-100 flex flex-col">
+      <div className="max-w-6xl mx-auto flex-grow">
         <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
           Bible Parallel Reader
         </h1>
@@ -145,6 +145,42 @@ export default function Home() {
         {/* Display Selected Verses */}
         {selectedBook && selectedChapter && selectedVerse && renderVerseContent()}
       </div>
+
+      {/* Footer with personal information */}
+      <footer className="mt-16 py-8 border-t border-gray-200">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold text-gray-800">关于本项目</h2>
+            <p className="text-gray-600 mt-2">
+              这是一个中文圣经与柏格理苗文圣经对照阅读网站。
+              旨在帮助读者更好地理解和比较两种版本的圣经内容。
+            </p>
+          </div>
+          
+          <div className="mb-4">
+            <h3 className="text-lg font-medium text-gray-800">联系方式</h3>
+            <p className="text-gray-600 mt-1">
+              Email: <a href="liangjunhong2022@ia.ac.cn" className="text-blue-600 hover:underline">liangjunhong2022@ia.ac.cn</a>
+            </p>
+          </div>
+
+          <div className="text-sm text-gray-500">
+            <p>© 2024 Bible Parallel Reader. All rights reserved.</p>
+            <p className="mt-1">
+              Built with ❤️ using Next.js and Tailwind CSS.
+              {' '}
+              <a 
+                href="https://github.com/your-username/display-bible-web" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                GitHub Repository
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
